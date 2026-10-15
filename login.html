@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | College Grievance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-layout">
+    <section class="auth-side">
+      <a class="brand brand-white" href="index.html"><span class="brand-mark">CG</span><span>College Grievance</span></a>
+      <div class="auth-side-content">
+        <span class="eyebrow light">COLLEGE GRIEVANCE PORTAL</span>
+        <h1>Welcome back.</h1>
+        <p>Sign in to submit grievances, track tickets and manage your portal.</p>
+        <div class="auth-points">
+          <span>✓ Centralized grievance tracking</span>
+          <span>✓ Student, Faculty and Admin views</span>
+          <span>✓ Secure and transparent workflow</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-card-wrap">
+      <div class="auth-card">
+        <a class="back-link" href="index.html">← Back to home</a>
+        <h2>Sign in to your account</h2>
+        <p class="muted">Sign in using your registered account credentials and role.</p>
+
+        <form id="loginForm" class="form-stack">
+          <label>Email Address<input id="loginEmail" type="email" placeholder="you@example.com" required></label>
+          <label>Password<input id="loginPassword" type="password" placeholder="Enter password" required></label>
+          <label>User Type
+            <select id="loginRole" required>
+              <option value="">Select role</option>
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+              <option value="admin">Admin</option>
+            </select>
+          </label>
+          <button class="btn btn-primary full" type="submit">Login to Portal →</button>
+        </form>
+
+        <div class="demo-box">
+          <strong>Secure sign in</strong>
+          <p>Your account is verified by the backend. Faculty and admin accounts must be created by the system administrator.</p>
+        </div>
+
+        <p class="auth-footer">New student? <a href="register.html">Create an account</a></p>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

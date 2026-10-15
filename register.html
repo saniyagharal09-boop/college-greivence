@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration | College Grievance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-layout">
+    <section class="auth-side">
+      <a class="brand brand-white" href="index.html"><span class="brand-mark">CG</span><span>College Grievance</span></a>
+      <div class="auth-side-content">
+        <span class="eyebrow light">STUDENT REGISTRATION</span>
+        <h1>Create your account.</h1>
+        <p>Register once to submit, track and manage your college grievances.</p>
+        <div class="auth-points">
+          <span>✓ Simple grievance submission</span>
+          <span>✓ Ticket-based tracking</span>
+          <span>✓ Optional anonymous reporting</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-card-wrap">
+      <div class="auth-card">
+        <a class="back-link" href="login.html">← Back to login</a>
+        <h2>Create student account</h2>
+        <p class="muted">Enter your basic details to continue.</p>
+
+        <form id="registerForm" class="form-stack">
+          <div class="form-two">
+            <label>Full Name<input id="regName" type="text" placeholder="Your full name" required></label>
+            <label>Student ID<input id="regStudentId" type="text" placeholder="e.g. CSBS-101" required></label>
+          </div>
+          <label>Email Address<input id="regEmail" type="email" placeholder="you@example.com" required></label>
+          <div class="form-two">
+            <label>Department
+              <select id="regDepartment" required>
+                <option value="">Select department</option>
+                <option>CSBS</option><option>Computer Science</option><option>Mechanical</option>
+                <option>Civil</option><option>Electrical</option><option>Other</option>
+              </select>
+            </label>
+            <label>Year
+              <select id="regYear" required>
+                <option value="">Select year</option>
+                <option>First Year</option><option>Second Year</option><option>Third Year</option><option>Final Year</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-two">
+            <label>Password<input id="regPassword" type="password" placeholder="Create password" required></label>
+            <label>Confirm Password<input id="regConfirm" type="password" placeholder="Confirm password" required></label>
+          </div>
+          <button class="btn btn-primary full" type="submit">Create Account →</button>
+        </form>
+
+        <p class="auth-footer">Already registered? <a href="login.html">Login here</a></p>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Grievance | College Grievance</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="dashboard-body">
+  <aside class="sidebar">
+    <a class="sidebar-brand" href="../index.html"><span class="brand-mark">CG</span><span>Grievance</span></a>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html">⌂ <span>Dashboard</span></a>
+      <a class="active" href="submit-grievance.html">＋ <span>Submit Grievance</span></a>
+      <a href="my-grievances.html">▤ <span>My Grievances</span></a>
+    </nav>
+    <a class="sidebar-logout" href="../index.html">↪ <span>Logout</span></a>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dashboard-header">
+      <div><span class="eyebrow">NEW GRIEVANCE</span><h1>Submit a Grievance</h1><p>Provide clear details so your issue can be routed and handled efficiently.</p></div>
+    </header>
+
+    <section class="form-card">
+      <div class="form-card-header"><div><h2>Grievance details</h2><p>Fields marked with * are required.</p></div><span class="secure-pill">🔒 Secure form</span></div>
+
+      <form id="grievanceForm" class="form-stack">
+        <div class="form-two">
+          <label>Complaint Title *<input id="complaintTitle" type="text" placeholder="e.g. Wi-Fi is not working in Block A" required></label>
+          <label>Category *
+            <select id="complaintCategory" required>
+              <option value="">Select category</option>
+              <option>Academic</option><option>IT / Wi-Fi</option><option>Infrastructure</option>
+              <option>Examination</option><option>Fees / Accounts</option><option>Hostel</option><option>Other</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Description *<textarea id="complaintDescription" rows="7" placeholder="Describe the issue, location, date and any useful details..." required></textarea></label>
+
+        <div class="form-two">
+          <label>Department
+            <select id="complaintDepartment">
+              <option value="">Auto-assign based on category</option>
+              <option>Academic Department</option><option>IT Department</option><option>Maintenance</option>
+              <option>Examination Department</option><option>Accounts Department</option><option>Hostel Administration</option>
+            </select>
+          </label>
+          <label>Proof / Attachment<input id="complaintFile" type="file" accept=".jpg,.jpeg,.png,.pdf"></label>
+        </div>
+
+        <div class="anonymous-box">
+          <input id="anonymous" type="checkbox">
+          <div><strong>Submit anonymously</strong><p>Your name can be masked for sensitive complaints. Your identity is hidden from the grievance record when anonymous reporting is selected.</p></div>
+        </div>
+
+        <div class="form-actions">
+          <button type="reset" class="btn btn-secondary">Clear Form</button>
+          <button type="submit" class="btn btn-primary">Submit Grievance →</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
